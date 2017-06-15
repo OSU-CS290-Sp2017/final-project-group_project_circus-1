@@ -122,7 +122,7 @@ commentButton.addEventListener('click', addComment);
  */
 function storePersonPhoto(personID, url, caption, callback) {
 
-  var postURL = "/people/" + personID + "/addPhoto";
+  var postURL = "/pictures/" + personID + "/addPhoto";
 
   var postRequest = new XMLHttpRequest();
   postRequest.open('POST', postURL);
