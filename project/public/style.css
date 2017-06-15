@@ -106,11 +106,17 @@ a {
 
 .photo-card {
   flex: 1 32%;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: black;
+  border: 6px solid #ccc;
+  border-radius: 30px;
   padding: 10px;
   text-align: center;
   margin: 5px;
+}
+
+.caption{
+	color: white;
+	font-weight: 70;
 }
 
 .person-photo-img {
@@ -158,45 +164,6 @@ a {
   font-weight: 400;
 }
 
-.person-card {
-  margin: 10px;
-  padding: 20px;
-  background-color: #;
-  font-size: 28px;
-}
-
-.person-card:hover {
-  background-color: #00BFFF;
-}
-
-.fa.fa-camera-retro {
-	background-color: #48D1CC;
-	border: 2px;
-	border-color: black;
-	border-radius: 8px;
-	font-size: 200px;
-	color: black;
-
-}
-
-.fa.fa-camera-retro:hover {
-  font-size: 250px;
-  color: grey;
-}
-.fa.fa-group{
-	background-color: 	#48D1CC;
-	border: 2px;
-	border-color: black;
-	border-radius: 8px;
-	font-size: 200px;
-	color: black;
-}
-
-.fa.fa-group:hover{
-  font-size: 250px;	
-  color: grey;
-}
-
 #modal-backdrop {
   position: fixed;
   top: 0;
@@ -218,23 +185,23 @@ a {
 }
 
 #add-photo-button{
-	width: 60px;
-	height: 60px;
+	width: 90px;
+	height: 90px;
 	border-radius:50px;
 	background-color: orange;
 	color: 48D1CC;
-	font-size: 50px;
+	font-size: 20px;
 	position: relative;
 	left: 1800px;
 }
 
 #add-photo-button:hover{
-	width: 70px;
-	height: 70px;
+	width: 100px;
+	height: 100px;
 	border-radius:60px;
 	background-color: darkorange;
 	color: 48D1CC;
-	font-size: 50px;
+	font-size: 24px;
 
 }
 
@@ -317,6 +284,14 @@ a {
   padding: 10px;
   margin-right: 20px;
   cursor: pointer;
+}
+
+#comment-input{
+	display: block;
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 200px;
+	height: 30px;
 }
 
 .modal-footer .modal-cancel-button:hover {
