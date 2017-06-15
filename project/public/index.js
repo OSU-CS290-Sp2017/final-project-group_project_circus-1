@@ -105,7 +105,16 @@ function insertNewPhoto() {
   }
 
 }
-
+/*
+var commentButton = querySelector('enter-comment');
+function addComment(event){
+	var input = getElementById('comment-input');
+	if (input){
+		
+	}
+}
+commentButton.addEventListener('click', addComment);
+*/
 
 /*
  * This function will communicate with our server to store the specified
