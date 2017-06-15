@@ -1,7 +1,7 @@
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
-  background-color: #dadada;
+  background-color: #48D1CC;
 }
 
 header {
@@ -11,21 +11,24 @@ header {
 
 a {
   text-decoration: none;
-  color: #03a9f4;
+  color: black;
 }
 
-a:hover {
-  color: #0c719e;
-}
 
 .site-title {
   margin: 0;
-  padding: 20px;
+  padding: 20px ;
+  font-weight: 50;
+  background-color: orange;
+  color: black;
+  font-size: 50px;
+  
 }
 
 .navbar {
   font-size: 22px;
-  background-color: #fff;
+  background-color: #FFB700;
+  line-height: 30px;
 }
 
 .navlist {
@@ -38,6 +41,7 @@ a:hover {
 
 .navitem:hover {
   background-color: rgba(231, 132, 119, 0.18);
+  color: #00BFFF;
 }
 
 .navitem a {
@@ -48,6 +52,10 @@ a:hover {
 
 .navitem.right {
   float: right;
+}
+
+.home-page{
+	background-color: #191970;
 }
 
 .photo-card-container {
@@ -92,10 +100,9 @@ a:hover {
 }
 
 .title-container {
-  margin: 10px;
+  margin: 0px;
   padding: 20px;
-  border: 1px solid #ccc;
-  background-color: #fff;
+  background-color: #48D1CC;
   text-align: center;
 }
 
@@ -114,32 +121,40 @@ a:hover {
 .person-card {
   margin: 10px;
   padding: 20px;
-  border: 1px solid #ccc;
-  background-color: #fff;
+  background-color: #;
   font-size: 28px;
 }
 
-#add-photo-button {
-  position: fixed;
-  bottom: 35px;
-  right: 35px;
-  z-index: 10;
-  width: 64px;
-  height: 64px;
-  background-color: red;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
-  color: white;
-  font-size: 40px;
-  font-weight: 200;
-  padding: 0 0 8px 0;
-  cursor: pointer;
-  outline: none;
+.person-card:hover {
+  background-color: #00BFFF;
 }
 
-#add-photo-button:hover {
-  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.33);
+.fa.fa-camera-retro {
+	background-color: #48D1CC;
+	border: 2px;
+	border-color: black;
+	border-radius: 8px;
+	font-size: 200px;
+	color: black;
+
+}
+
+.fa.fa-camera-retro:hover {
+  font-size: 250px;
+  color: grey;
+}
+.fa.fa-group{
+	background-color: 	#48D1CC;
+	border: 2px;
+	border-color: black;
+	border-radius: 8px;
+	font-size: 200px;
+	color: black;
+}
+
+.fa.fa-group:hover{
+  font-size: 250px;	
+  color: grey;
 }
 
 #modal-backdrop {
