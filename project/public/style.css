@@ -33,6 +33,7 @@ a {
 
 .navlist {
   margin: 0;
+  list-style-type: none;
 }
 
 .navitem {
@@ -52,6 +53,45 @@ a {
 
 .navitem.right {
   float: right;
+}
+
+.search {
+  float: right; 
+  margin-right: 20px;
+  padding: 0;
+  line-height: 38px;
+}
+
+#nav-search-input {
+  padding: 4px;
+  font-size: 18px;
+  color: black;
+  background-color: #FFB700;
+  border: 5px solid black;
+  border-radius: 2px;
+}
+
+#nav-search-input:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+#search-button {
+  margin-left: -5px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: #343434;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  color: #319df6;
+}
+
+#search-button:focus {
+  color: #319df6;
+  outline: none;
 }
 
 .home-page{
@@ -175,6 +215,27 @@ a {
   right: 0;
   z-index: 1010;
   overflow: scroll;
+}
+
+#add-photo-button{
+	width: 60px;
+	height: 60px;
+	border-radius:50px;
+	background-color: orange;
+	color: 48D1CC;
+	font-size: 50px;
+	position: relative;
+	left: 1800px;
+}
+
+#add-photo-button:hover{
+	width: 70px;
+	height: 70px;
+	border-radius:60px;
+	background-color: darkorange;
+	color: 48D1CC;
+	font-size: 50px;
+
 }
 
 .hidden {
