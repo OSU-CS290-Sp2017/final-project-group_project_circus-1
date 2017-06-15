@@ -1,7 +1,7 @@
 {
-  "name": "express-dynamic-content",
+  "name": "BINI Website",
   "version": "1.0.0",
-  "description": "Basic dynamic content serving with Express",
+  "description": "Final Project",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,14 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/OSU-CS290-Sp2017/express-dynamic-content.git"
+    "url": "git+ssh://git@github.com/OSU-CS290-Sp2017/final-project-group_project_circus-1.git"
   },
-  "author": "Rob Hess <hessro@oregonstate.edu>",
-  "license": "MIT",
+  "author": "Alejandro Tovar <tovaral@oregonstate.edu>",
   "bugs": {
-    "url": "https://github.com/OSU-CS290-Sp2017/express-dynamic-content/issues"
+    "url": "https://github.com/OSU-CS290-Sp2017/final-project-group_project_circus-1"
   },
-  "homepage": "https://github.com/OSU-CS290-Sp2017/express-dynamic-content#readme",
+  "homepage": "https://github.com/OSU-CS290-Sp2017/OSU-CS290-Sp2017/final-project-group_project_circus-1/edit/master/project/",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
