@@ -13,17 +13,31 @@ app.set('view engine', 'handlebars');
 
 app.use(bodyParser.json());
 
-app.get('/people', function (req, res, next) {
-
-  var templateArgs = {
-    people: peopleData,
-    title: "Photos of People"
-  };
-
-  res.render('peoplePage', templateArgs);
-
+app.get('/pictures/:photos', function (req, res, next) {
+console.log("== url params for request:", req.params);
+  //var person = "photos";
+  var person= req.params.photos;
+  var personData = peopleData[person];
+  if (personData) {
+    var templateArgs = {
+      photos: personData.photos,
+      name: "My Photos",
+      title: "My Photos"
+    }
+    res.render('photosPage', templateArgs);
+  } else {
+    next();
+  }
 });
+ // var templateArgs = {
+   // people: peopleData,
+    //title: "Photos of People"
+  //};
 
+  //res.render('peoplePage', templateArgs);
+
+//});
+/*
 app.get('/people/:person', function (req, res, next) {
   console.log("== url params for request:", req.params);
   var person = req.params.person;
@@ -39,16 +53,19 @@ app.get('/people/:person', function (req, res, next) {
     next();
   }
 });
-
-app.post('/people/:person/addPhoto', function (req, res, next) {
-  var person = peopleData[req.params.person];
-
+*/
+//app.post('/people/:person/addPhoto', function (req, res, next) {
+app.post('/pictures/:person/addPhoto', function (req, res, next) {
+ // var person = peopleData["photos"];
+	var person = peopleData[req.params.person];
+//console.log("Dfdsf");
   if (person) {
     if (req.body && req.body.url) {
 
       var photo = {
         url: req.body.url,
         caption: req.body.caption
+		
       };
 
       person.photos = person.photos || [];
